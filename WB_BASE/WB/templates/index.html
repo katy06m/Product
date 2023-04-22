@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+
+{% block content %}
+ <h1>Товары</h1>
+       {% for el in products %}
+        <div class="alert alert-warning mt-2">
+            <h3> <i> {{ el.product }} </i> </h3> <h5>{{ el.note }}</h5>
+            <h5>{{ el.article }}</h5>
+            <h5>{{ el.quantity }}</h5>
+
+        </div>
+    {% endfor %}
+{% endblock %}
